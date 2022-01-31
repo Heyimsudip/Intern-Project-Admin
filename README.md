@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# MERN Stack Ecommerce Application with Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Build with the MERN stack (MongoDB, Express, React and NodeJS) and Redux.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ - Introduction
+ - Key Features
+ - Technologies used
+ - Client
+ - Server
+ - Database
+ - Configure and Setup
+ - Author
+ - License
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ 
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Introduction
+A Full sack e-commerce application made using the MERN stack (MongoDB, Express, React & Nodejs) and Redux for state management. This application is based on the real e-commerce application which is used in selling products online with an online payment system (Strip). With this application, you can log in, Register, purchase the products, add them to the cart and do the online payment using a Strip from the Customer Side but There is also an Admin Dashboard where the admin can update and add product and information of the product.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Key Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Select the product and add it to the cart.
+- Demo payment and purchase the product online using Stripe Payment System.
+- See all the products which are added to the client-side with Admin Dashboard.
+- Edit and Add a new product from the admin side which saves the information in the database and is shown dynamically on the client-side.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technology used
+This project was created using the following technologies.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Client
+- React JS
+- Redux (for managing and centralizing application state)
+- React-router-dom (To handle routing)
+- Axios (for making api calls)
+- Material UI & CSS Module (for User Interface)
+- S3 Bucket (to allows users to upload their business logo)
+- Strip (for demo online payment)
+- recharts (to display chart)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Server
+- Express
+- Mongoose
+- JWT (for authentication)
+- bcryptjs (for data encryption)
+- Strip (for demo online payment)
 
-## Learn More
+## Database
+MongoDB (MongoDB Atlas)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Dependencies(tech-stacks)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Cient-side             | Server-side                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| "@material-ui/core": "^4.12.3" | "cors": "^2.8.5" |
+| "@material-ui/icons": "^4.11.2" | "crypto-js": "^4.1.1" |
+| "@reduxjs/toolkit": "^1.6.1" | "dotenv": "^10.0.0" |
+| "@testing-library/jest-dom": "^5.11.4" | "express": "^4.17.1" |
+| "@testing-library/react": "^11.1.0" | "jsonwebtoken": "^8.5.1" |
+|"@testing-library/user-event": "^12.1.10" | "mongoose": "^6.0.5"|
+| "axios": "^0.21.4" | "nodemon": "^2.0.12"|
+| "react": "^17.0.2" | "stripe": "^8.174.0"|
+| "react-dom": "^17.0.2" | |
+| "react-redux": "^7.2.5" | |
+| "react-router-dom": "^5.3.0" | |
+| "react-scripts": "4.0.3" | |
+| "react-stripe-checkout": "^2.6.3" | |
+| "redux-persist": "^6.0.0" | |
+| "styled-components" | |
+| "web-vitals" | |
+| "redux-persist": "^6.0.0" | |
+| "recharts": "^6.0.0" | |
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Authors
 
-### Making a Progressive Web App
+- [@Heyimsudip](https://github.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To deploy this project run
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+    npm run start
+```
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
